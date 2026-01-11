@@ -1,34 +1,33 @@
 # Retail & Warehouse Sales Analysis
 
 ## Project Overview
-This project analyzes retail and warehouse sales data to understand sales performance across channels, identify top-performing product categories and suppliers, and support data-driven business decisions. The analysis combines exploratory data analysis (EDA) using Python with an interactive Power BI dashboard for visualization.
+This project analyzes retail and warehouse sales data to evaluate sales performance across channels, identify top-performing product categories and suppliers, and support data-driven business decisions. The analysis combines Python-based exploratory data analysis (EDA) with an interactive Power BI dashboard.
 
 ---
 
 ## Business Use Case
-The insights from this project can help sales managers, inventory planners, and business analysts:
-- Identify the primary revenue-driving sales channels
-- Understand product category and supplier concentration
-- Analyze the impact of zero and negative sales values (returns and adjustments)
-- Support inventory planning and channel strategy decisions
+The insights from this project can help:
+- Sales managers identify revenue-driving channels
+- Inventory planners optimize stock and distribution
+- Business analysts evaluate supplier and product concentration
+- Teams understand the impact of zero and negative sales values (returns and adjustments)
 
 ---
 
 ## Dataset Summary
 - Approximately 30,000 records
 - Sales data from selected months in 2020
-- Sales channels: Retail, Warehouse, Transfers
-- Key attributes include supplier, item type, sales metrics, and time features
+- Channels: Retail, Warehouse, Transfers
+- Key fields include supplier, item type, sales metrics, and time attributes
 
 ---
 
 ## Analysis & Methodology
-The project follows a structured analytics workflow:
-- Data quality assessment including analysis of zero and negative sales values
+- Data quality assessment, including zero and negative sales analysis
 - Data cleaning while preserving valid business scenarios
-- Feature engineering such as total sales, gross sales, adjustments, channel count, and dominant sales channel
-- Exploratory data analysis to identify trends and patterns
-- Power BI dashboard development for interactive insight exploration
+- Feature engineering (total sales, gross sales, adjustments, dominant channel)
+- Exploratory data analysis using Python
+- Interactive dashboard development using Power BI
 
 ---
 
@@ -37,29 +36,16 @@ The project follows a structured analytics workflow:
 ### Dashboard Overview
 ![Dashboard Overview](images/dashboard_overview.png)
 
+> Detailed dashboard insights are documented in `powerbi/README.md`.
+
 ---
 
-## Dashboard Insights
-
-### Key Performance Indicators
-- **Total Gross Sales:** 1.24M
-- **Net Sales:** 1.23M
-- **Active Suppliers:** 291
-- **Active Items:** 16K
-
-### Sales Channel Performance
-- Warehouse sales contribute approximately 79% of total revenue.
-- Retail and transfer channels play a smaller supporting role.
-
-### Product & Supplier Insights
-- Beer is the highest-grossing and dominant product category.
-- Sales are concentrated among a small number of major suppliers.
-- Most products are sold through a single dominant channel.
-
-### Time-Based Trends
-- The dataset covers selected months in 2020.
-- Sales vary across the available months, with some months showing higher activity.
-- Due to the limited time range, long-term seasonality conclusions cannot be reliably inferred.
+## Key Takeaways (Summary)
+- Warehouse sales are the primary revenue driver.
+- Beer is the dominant product category.
+- Revenue is concentrated among a small number of suppliers.
+- Most products rely on a single dominant sales channel.
+- Time-based conclusions are limited due to partial-year data availability.
 
 ---
 
@@ -71,3 +57,9 @@ The project follows a structured analytics workflow:
 ---
 
 ## Repository Structure
+retail-warehouse-sales-analysis/
+├── notebooks/ # EDA notebook and documentation
+├── powerbi/ # Power BI dashboard and insights
+├── images/ # Dashboard screenshots
+├── data/ # Raw and processed datasets
+└── README.md # Project overview
