@@ -56,12 +56,12 @@ The insights from this project can help:
 
 ---
 
-## Repository Structure
-
+Repository Structure
+```
 retail-warehouse-sales-analysis/
 ├── notebooks/ # EDA notebook and documentation
 ├── powerbi/ # Power BI dashboard and insights
 ├── images/ # Dashboard screenshots
 ├── data/ # Raw and processed datasets
 └── README.md # Project overview
-
+```
